@@ -2,21 +2,17 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
--- local global = vim.g
--- global.mapleader = " "
--- global.maplocalleader = " "
-
 local options = vim.opt
 
 options.colorcolumn = "80,120"
 
--- options.listchars = "eol:↴,tab:>·,trail:~,extends:>,precedes:<,space:·"
--- set listchars=tab:→\ ,trail:·,nbsp:·
 options.listchars = "tab:>→,trail:·,nbsp:·"
 options.list = true
 
--- options.guifont = "FiraCode NF:h14"
-options.clipboard = "unnamedplus"
+-- https://old.reddit.com/r/neovim/comments/13cf8de/is_there_a_way_to_disable_saving_text_to_the/
+vim.opt.clipboard = ""
+-- map({ "n", "x" }, "y", '"+y')
+-- map("n", "p", '""p')
 
 options.conceallevel = 0
 
