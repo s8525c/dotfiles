@@ -66,7 +66,7 @@ return {
         ["html"] = { "prettier" },
         ["json"] = { "prettier" },
         ["jsonc"] = { "prettier" },
-        ["yaml"] = { "yamlfmt" },
+        ["yaml"] = { "prettier" },
         ["markdown"] = { "prettier" },
         ["markdown.mdx"] = { "prettier" },
         ["graphql"] = { "prettier" },
@@ -80,6 +80,9 @@ return {
         -- Example of using shfmt with extra args
         shfmt = {
           prepend_args = { "-i", "2", "-ci" },
+        },
+        stylua = {
+          prepend_args = { "--indent-type", "Spaces", "--indent-width", "2", "--line-endings", "Unix" },
         },
       },
     }

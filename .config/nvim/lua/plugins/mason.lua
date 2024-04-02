@@ -3,18 +3,13 @@ return {
   opts = {
     ensure_installed = {
       "bash-language-server",
-      -- "dockerfile-language-server",
-      -- "hadolint",
-      -- "helm-ls",
       "json-lsp",
       "jsonlint",
       "jsonnet-language-server",
       "lua-language-server",
-      -- "marksman",
       "prettierd",
       "shellcheck",
       "shfmt",
-      -- "sqlls",
       "stylua",
       "terraform-ls",
       "tflint",
