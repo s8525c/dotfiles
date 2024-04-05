@@ -3,15 +3,17 @@
 -- Add any additional options here
 
 local options = vim.opt
+local commands = vim.cmd
+-- local map = vim.keymap.set
 
 options.colorcolumn = "80,120"
 
-options.listchars = "tab:>→,trail:·,nbsp:·"
+options.listchars = "tab:>·,trail:·,extends:>,precedes:<,space:·"
 options.list = true
 
 -- https://old.reddit.com/r/neovim/comments/13cf8de/is_there_a_way_to_disable_saving_text_to_the/
-vim.opt.clipboard = ""
--- map({ "n", "x" }, "y", '"+y')
+-- options.clipboard = ""
+-- map({ "n", "x" }, "Y", '"+y')
 -- map("n", "p", '""p')
 
 options.conceallevel = 0
@@ -35,3 +37,7 @@ options.completeopt = "menuone,noselect"
 
 options.swapfile = false
 options.autoread = true
+
+-- Highlight trailing whitespace
+commands("highlight TrailingWhitespace ctermbg=red guibg=red")
+commands("match TrailingWhitespace /\\s\\+$/")
