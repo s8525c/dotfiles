@@ -23,3 +23,6 @@ k.set(
   [[:%s/\s\+$//e<cr>]],
   { noremap = true, silent = true, desc = "Remove all trailing whitespace by pressing F5" }
 )
+
+k.del("n", "<C-Left>")
+k.del("n", "<C-Right>")
