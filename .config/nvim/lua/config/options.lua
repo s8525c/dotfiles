@@ -11,11 +11,6 @@ options.colorcolumn = "80,120"
 options.listchars = "tab:>·,trail:·,extends:>,precedes:<,space:·"
 options.list = true
 
--- https://old.reddit.com/r/neovim/comments/13cf8de/is_there_a_way_to_disable_saving_text_to_the/
--- options.clipboard = ""
--- map({ "n", "x" }, "Y", '"+y')
--- map("n", "p", '""p')
-
 options.conceallevel = 0
 
 -- options.updatetime = 100
