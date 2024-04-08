@@ -8,7 +8,8 @@ local commands = vim.cmd
 
 options.colorcolumn = "80,120"
 
-options.listchars = "tab:>·,trail:·,extends:>,precedes:<,space:·"
+options.listchars = "tab:→ ,trail:·,nbsp:·"
+-- options.listchars = "tab:>·,trail:·,extends:>,precedes:<,space:·"
 options.list = true
 
 options.conceallevel = 0
