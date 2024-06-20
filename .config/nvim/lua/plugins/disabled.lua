@@ -8,5 +8,6 @@ return {
   -- { "echasnovski/mini.pairs, enabled = false },
   { "nvimdev/dashboard-nvim", enabled = false },
   { "folke/noice.nvim", enabled = false },
+  -- { "lukas-reineke/indent-blankline.nvim", enabled = false },
   -- get the full list of plugins to potentially disable using <leader>rp
 }

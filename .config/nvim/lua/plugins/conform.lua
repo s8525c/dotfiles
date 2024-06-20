@@ -55,6 +55,7 @@ return {
         ts = { "prettier" },
         terraform = { "terraform_fmt" },
         tf = { "terraform_fmt" },
+        python = { "black" },
         ["terraform-vars"] = { "terraform_fmt" },
         ["javascript"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },
