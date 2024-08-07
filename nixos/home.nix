@@ -74,6 +74,8 @@
       escapeTime = 0;
       secureSocket = false;
 
+      keyMode = "vi";
+
       plugins = with pkgs; [ tmuxPlugins.resurrect ];
 
       extraConfig = ''
@@ -177,6 +179,10 @@
         set-option -sg escape-time 10
         set-option -g focus-events on
         set-option -sa terminal-features ',xterm-256color:RGB'
+
+        # make home/end keys to work
+        bind-key -n Home send Escape "OH"
+        bind-key -n End send Escape "OF"
       '';
 
     };
