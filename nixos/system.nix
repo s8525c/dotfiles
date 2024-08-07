@@ -43,8 +43,8 @@
   # users.defaultUserShell = pkgs.nushell;
 
   # Use zsh as your default shell.
-  # programs.zsh.enable = true;
-  # users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   # Install system-wide packages.
   #
