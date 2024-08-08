@@ -211,8 +211,11 @@
     # nushell.enable
     zsh = {
       enable = true;
-      autosuggestion.enable = true;
-      syntaxHighlighting.enable = true;
+      enableCompletion = true;
+      oh-my-zsh = {
+        enable = true;
+        theme = "agnoster";
+      };
 
       history = {
         size = 1000000;
@@ -221,28 +224,16 @@
         extended = true;
       };
 
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+
       sessionVariables = {
         LIBGL_ALWAYS_INDIRECT = 1;
         DISPLAY = ":0";
         BROWSER = "wslview";
       };
 
-      shellAliases = {
-        gapp = "gcloud auth application-default login";
-        gauth = "gcloud auth login";
-        ide = "goland.sh . > /dev/null 2>&1";
-      };
-
       plugins = [
-        {
-          name = "zsh-autosuggestions";
-          src = pkgs.fetchFromGitHub {
-            owner = "zsh-users";
-            repo = "zsh-autosuggestions";
-            rev = "v0.7.0";
-            sha256 = "0z6i9wjjklb4lvr7zjhbphibsyx51psv50gm07mbb0kj9058j6kc";
-          };
-        }
         {
           name = "zsh-fzf-history-search";
           src = pkgs.fetchFromGitHub {
@@ -253,22 +244,10 @@
           };
         }
       ];
-
-      oh-my-zsh = {
-        enable = true;
-        theme = "agnoster";
-        # Standard OMZ plugins pre-installed to $ZSH/plugins/
-        # Custom OMZ plugins are added to $ZSH_CUSTOM/plugins/
-        # Enabling too many plugins will slowdown shell startup
-        plugins = [
-          "docker"
-          "git"
-          "sudo" # press Esc twice to get the previous command prefixed with sudo https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo
-        ];
-        # extraConfig = ''
-        #   # Display red dots whilst waiting for completion.
-        #   COMPLETION_WAITING_DOTS="true"
-        # '';
+      shellAliases = {
+        gapp = "gcloud auth application-default login";
+        gauth = "gcloud auth login";
+        ide = "goland.sh . > /dev/null 2>&1";
       };
     };
 
