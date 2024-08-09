@@ -293,7 +293,23 @@
 
       pkgs.tig
       pkgs.nix-prefetch-git
+
+      pkgs.bash-language-server
+      pkgs.black
+      pkgs.jsonnet-language-server
+      pkgs.lua-language-server
+      pkgs.nodePackages.jsonlint
+      pkgs.nodePackages.prettier
+      pkgs.shellcheck
+      pkgs.shfmt
+      pkgs.stylua
+      pkgs.tenv
+      pkgs.terraform-ls
+      pkgs.tflint
+      pkgs.yaml-language-server
+      pkgs.yamlfmt
     ];
+
     file = {
       ".config/nvim/" = {
         source = "${dotfiles}/.config/nvim";
