@@ -35,7 +35,7 @@ options.swapfile = false
 options.autoread = true
 
 -- Change cursor color
-options.guicursor = "n-v-c:block-Cursor/lCursor"
+-- options.guicursor = "n-v-c:block-Cursor/lCursor"
 
 -- Highlight trailing whitespace
 commands("highlight TrailingWhitespace ctermbg=red guibg=red")

@@ -56,6 +56,7 @@ return {
         terraform = { "terraform_fmt" },
         tf = { "terraform_fmt" },
         python = { "black" },
+        d2 = { "d2_fmt" },
         ["terraform-vars"] = { "terraform_fmt" },
         ["javascript"] = { "prettier" },
         ["javascriptreact"] = { "prettier" },
@@ -72,6 +73,7 @@ return {
         ["markdown.mdx"] = { "prettier" },
         ["graphql"] = { "prettier" },
         ["handlebars"] = { "prettier" },
+        ["d2lang"] = { "d2_fmt" },
       },
       -- The options you set here will be merged with the builtin formatters.
       -- You can also define any custom formatters here.
