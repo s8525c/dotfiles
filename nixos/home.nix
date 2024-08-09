@@ -1,4 +1,4 @@
-{ pkgs, dotfiles, ... }:
+{ pkgs, ... }:
 {
   programs = {
     git = {
@@ -309,13 +309,6 @@
       pkgs.yaml-language-server
       pkgs.yamlfmt
     ];
-
-    file = {
-      ".config/nvim/" = {
-        source = "${dotfiles}/.config/nvim";
-        recursive = true;
-      };
-    };
 
     stateVersion = "23.05";
   };

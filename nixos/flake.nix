@@ -4,11 +4,6 @@
   inputs = {
     sebnix.url = "git+https://github.sebank.se/sebnix/sebnix.git";
     nixpkgs.follows = "sebnix/nixpkgs";
-
-    dotfiles = {
-      url = "github:s8525c/dotfiles";
-      flake = false;
-    };
   };
 
   outputs = inputs: {
@@ -18,15 +13,6 @@
       modules = [
         inputs.sebnix.nixosModules.seb
         ./system.nix
-        {
-          home-manager.sharedModules = [
-            {
-              _module.args = {
-                inherit (inputs) dotfiles;
-              };
-            }
-          ];
-        }
       ];
     };
   };
