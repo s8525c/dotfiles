@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "dotfiles": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1719941828,
-        "narHash": "sha256-kXhRwkjJYE9sfVNuG7s0/juZG5UpOcLjPkgSvOhHXJU=",
-        "owner": "s8525c",
-        "repo": "dotfiles",
-        "rev": "f6ab41af58aa8a8f093988e3650ca7e3e8137049",
-        "type": "github"
-      },
-      "original": {
-        "owner": "s8525c",
-        "repo": "dotfiles",
-        "type": "github"
-      }
-    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -154,7 +138,6 @@
     },
     "root": {
       "inputs": {
-        "dotfiles": "dotfiles",
         "nixpkgs": [
           "sebnix",
           "nixpkgs"
